@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>DevSodiq Landing page</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="./index.html">DevSodiq</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="./index.html">Home</a>
+                </li>
+                
+                <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header " >
+            <h2>Transportation Dashboard</h2>        
+   
+    </header><!-- end of page header -->
+
+    
+
+    <section class="container">
+        <h2>Data Cleaning and Transformation</h2>
+        <p>To create the dashboards, the following steps occurred:</p>
+        <ol>
+            <li>Data Cleaning:
+                <ul>
+                    <li>Handling Missing Values: Ensured that all missing 
+                        or null values in the dataset were replaced with appropriate defaults or interpolated.</li>
+                    <li>Data Consistency: Standardized data formats for fields like dates, times, and categorical variables (e.g., gender, route names).</li>
+                    <li>Removing Duplicates: Checked for duplicate entries and removed them to ensure accuracy in passenger counts and utilization metrics.</li>
+
+                </ul>
+                <li>Data Transformation:<ul>
+                    <li>Grouping and Aggregation:
+                        <ul>
+                            <li>Aggregated total riders by route, gender, age group, occupation, and time periods.</li>
+                            <li>Summarized bus utilization rates and categorized them into "over-utilized," "under-utilized," and "well-utilized."</li>
+                        </ul>
+                    </li>
+                    <li>Time Analysis:
+                        <ul>
+                            <li>Extracted key time intervals (e.g., morning, afternoon, evening) and identified peak and off-peak hours.</li>
+                            <li>Computed yearly and monthly passenger distributions.</li>
+                        </ul>
+                    </li>
+                    <li>Calculated Metrics:
+                        <ul>
+                            <li>Average riders per trip, total trips, and percentage contributions by categories (e.g., gender, age).</li>
+                            <li>YoY (Year-over-Year) change for total passengers.</li>
+                        </ul>
+                    </li>
+                    <li>Categorization:
+                        <ul>
+                            <li>Classified buses based on performance (top-performing and underperforming).</li>
+                            <li>Distinguished between AM and PM passenger distributions.</li>
+                        </ul>
+                    </li>    
+                        
+                    
+                </ul></li>
+            </li>
+        </ol>
+    </section>
+
+    <section class="container">
+        <h2>Dashboard</h2>
+        <iframe src="https://1drv.ms/x/s!ApICPWJ-CIeHbWnKmFDJUqphk-s?embed=1&em=2" width="100%" 
+                height="800px" frameborder="0"></iframe>
+
+    </section>
+   <br>
+    <section class="container">
+        <h2>Key Insights (Summary)</h2>
+     
+        <ol>
+            <li>General Statistics:
+                <ul>
+                    <li>Total Passengers: 6,587 passengers were recorded in the dataset.</li>
+                    <li>Average Riders Per Trip: 33 riders per trip.</li>
+                </ul>
+            </li>
+            <li>Performance by Route:
+                <ul>
+                    <li>Busiest Route: East-West Express with 1,322 riders.</li>
+                    <li>Least Busy Route: South Line with 185 riders.</li>
+                </ul>
+            </li>
+            <li>Demographics:
+                <ul>
+                    <li>Gender: Males account for the majority of riders (74%), followed by females (15%) and others (11%).</li>
+                    <li>Age Group: The most represented age groups are 30–39 and 40–49, contributing significantly to ridership.</li>
+                </ul>
+            </li>
+            <li>Bus Utilization:
+                <ul>
+                    <li>Peak Hour: 8:57 PM.</li>
+                    <li>Off-Peak Hour: 7:50 PM.</li>
+                    <li>Utilization Categories: 26% over-utilized, 49% well-utilized, and 25% under-utilized buses.</li>
+                </ul>
+            </li>
+            <li>Occupational Distribution:
+                <ul>
+                    <li>The largest segment of riders includes "Other" (1,633) and "Professional" (1,554) groups.</li>
+                </ul>
+            </li>
+            <li>Yearly and Monthly Distribution:
+                <ul>
+                    <li>Most ridership occurred in 2023 (5,654 passengers), with a sharp decline in 2024 (933 passengers).</li>
+                    <li>December saw the highest monthly ridership.</li>
+                </ul>
+            </li>
+            <li>Weekly Patterns:
+                <ul>
+                    <li>Weekdays, particularly Monday and Tuesday, saw the highest average ridership.</li>
+                </ul>
+            </li>
+            <li>Bus Performance:
+                <ul>
+                    <li>Best Performing Bus: Bus 4.</li>
+                    <li>Underperforming Buses: Bus 13.</li>
+                </ul>
+            </li>
+            <li>Rider Moments:
+                <ul>
+                    <li>AM Riders: 35.4% of total passengers.</li>
+                    <li>PM Riders: 64.6% of total passengers.</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <div>
+        
+                </div>
+    
+
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">DevSodiq</a></p>
+             <p>Location: Lagos, Nigeria</p>
+             <p>Mobile: 234 816 59 4421</p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="https://www.github.com/sodiqlef" class="link"><i class="ti-github"></i></a>
+                <a href="https://twitter.com/sodiqOgundimu" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="mailto:ogundimusodiq0@gmail.com" class="link"><i class="ti-google"></i></a>
+                <a href="mailto:ogundimusodiq0@yahoo.com" class="link"><i class="ti-yahoo"></i></a>
+                <a href="https://wa.me/2348165994421" class="link"><i class="ti-headphone"></i></a>
+                
+            </div>
+           
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+</body>
+</html>
